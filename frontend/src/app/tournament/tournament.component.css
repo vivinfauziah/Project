@@ -1,0 +1,30 @@
+.nav{
+    height: 50px;
+    background-color: rgb(224, 220, 220);
+}
+.rank{
+    background-color: white;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+.comment{
+    background-color: rgba(0,0,0,0.5);
+}
+table, tr{
+}
+.panel{
+    padding: 5px;
+    background-color: rgb(188, 245, 188);
+}
+.panel-body{
+    background-color: rgba(0,0,0,0.1);
+}
+.site_footer_nav{
+    background-image: url("https://image.flaticon.com/icons/svg/123/123509.svg");
+    padding: 5px;
+}
+table{
+    width: 100%;
+}
+.comment{
+}

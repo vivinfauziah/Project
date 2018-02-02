@@ -1,0 +1,109 @@
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<div class="navbar">
+<ul class="nav nav-pills">
+  <a class="navbar-brand" href="#">Smash Logo</a>
+  <li role="presentation" class="active"><a href="#">News</a></li>
+  <li role="presentation"><a routerLink="/tournaments">Tournaments</a></li>
+  <li role="presentation"><a routerLink="/ranking">Rankings</a></li>
+</ul>
+</div>
+
+<div class="header">
+    <div class="header-tagline">
+        <div class="title">
+            House Of Badminton
+        </div>
+        <div class="description" style="text-align: center;">
+            Feel the Game, Know Everything about Badminton, Here!
+        </div>        
+    </div>
+</div>
+
+<div class="body">
+<div class="news col-xs-offset-1 col-md-10">
+    <div class="col-xs-12 col-md-12">
+        <h3 style="text-align:center;">TODAY'S UPDATE</h3>
+        <img src="assets/badminton.jpg" alt="" style="height: 500px; width: 100%;">
+        <h4>Badminton Photography</h4>
+        <p>Take the Badminton with the Good. Life is a game, Badminton is serious. Let your racquet do the talking. A little birdie told me:  let’s play Badminton. I do all my own stunts. Hustle and hit and never quit.</p>
+        <div class="col-xs-12 col-md-4" *ngFor="let e of article, let i=index">
+            <img src="{{e.photo}}" alt="" style="height: 200px; width: 100%;">
+            <h4>{{e.title}}</h4>
+            <p>{{e.description}}</p>
+        </div>
+</div>
+</div>
+
+<div class="site_footer_nav ">
+  
+          <nav class="footer-nav row">
+  
+              <div class="col-xs-12 col-md-4" style="text-align: center;">
+                  <h3 class="footer-nav_title">Social Media &amp; Apps</h3>
+                  <ul id="menu-social-media-links" class="footer-nav_list list-unstyled"><li id="menu-item-1727" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1727 fs-16px fw-400 text-gray navigation-section_menu_item_mobile "><a href="https://www.facebook.com/bwfbadminton">FACEBOOK</a></li>
+  <li id="menu-item-1728" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1728 fs-16px fw-400 text-gray navigation-section_menu_item_mobile "><a href="https://twitter.com/bwfmedia">TWITTER</a></li>
+  <li id="menu-item-1729" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1729 fs-16px fw-400 text-gray navigation-section_menu_item_mobile "><a href="http://t.qq.com/BWFbadminton">QQ</a></li>
+  <li id="menu-item-1730" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1730 fs-16px fw-400 text-gray navigation-section_menu_item_mobile "><a href="http://weibo.com/BWFofficial">WEIBO</a></li>
+  <li id="menu-item-1731" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1731 fs-16px fw-400 text-gray navigation-section_menu_item_mobile "><a href="http://i.youku.com/BWFofficial">YOUKU</a></li>
+  <li id="menu-item-1732" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1732 fs-16px fw-400 text-gray navigation-section_menu_item_mobile "><a href="https://www.youtube.com/user/bwf">YOUTUBE</a></li>
+  <li id="menu-item-1733" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1733 fs-16px fw-400 text-gray navigation-section_menu_item_mobile "><a href="https://soundcloud.com/bwfbadminton/bwf-world-superseries-anthem">SOUND CLOUD</a></li>
+  </ul>
+              </div>
+  
+              <div class="clearfix visible-xs"></div>
+  
+              <div class="col-xs-12 col-md-4" style="text-align: center;">
+                  <h3 class="footer-nav_title">Website links</h3>
+                  <ul id="menu-website-links" class="footer-nav_list list-unstyled"><li id="menu-item-1720" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1720 fs-16px fw-400 text-gray navigation-section_menu_item_mobile "><a href="http://bwfbadminton.com/">BWFBADMINTON.COM</a></li>
+  <li id="menu-item-1721" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1721 fs-16px fw-400 text-gray navigation-section_menu_item_mobile "><a href="http://bwfcorporate.com/">BWFCORPORATE.COM</a></li>
+  <li id="menu-item-1722" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1722 fs-16px fw-400 text-gray navigation-section_menu_item_mobile "><a href="http://bwfworldsuperseries.com/">BWFWORLDSUPERSERIES.COM</a></li>
+  <li id="menu-item-1723" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1723 fs-16px fw-400 text-gray navigation-section_menu_item_mobile "><a target="_blank" href="http://badmintonworld.tv/">BADMINTONWORLD.TV</a></li>
+  <li id="menu-item-1724" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-1724 fs-16px fw-400 text-gray navigation-section_menu_item_mobile "><a href="http://bwfworldchampionships.com/">BWFWORLDCHAMPIONSHIPS.COM</a></li>
+  <li id="menu-item-1725" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1725 fs-16px fw-400 text-gray navigation-section_menu_item_mobile "><a href="http://bwfshuttletime.com/">BWFSHUTTLETIME.COM</a></li>
+  <li id="menu-item-1726" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1726 fs-16px fw-400 text-gray navigation-section_menu_item_mobile "><a href="http://bwfeducation.com/">BWFEDUCATION.COM</a></li>
+  <li id="menu-item-2845" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2845 fs-16px fw-400 text-gray navigation-section_menu_item_mobile "><a href="http://bwfsudirmancup.com">BWFSUDIRMANCUP.COM</a></li>
+  </ul>
+              </div>
+  
+              <div class="col-xs-12 col-md-4" style="text-align: center;">
+                  <h3 class="footer-nav_title">SMASHCORE HQ Contact</h3>
+                  <ul class="footer-nav_list list-unstyled">
+                      <li>Unit No. 1, Level 29 <br>
+                          Naza Tower Platinum Park <br>
+                          No. 10, Persiaran KLCC <br>
+                          50088 Kuala Lumpur <br>
+                          Malaysia <br>
+                          &nbsp;
+                      </li>
+                  </ul>
+              </div>
+  
+          </nav>
+  
+          <div class="footer-info">
+  
+              <div class="footer-info_credit ">
+  
+                  <!-- Total logo link -->
+                  <div class="footer-info_logo col-sm-6 col-xs-6 text-left" style="width:50% !important;">
+                      <a href="http://www.lubricants.total.com/" target="_blank">
+                          <img class="img-responsive b-error" alt="Total BWF World Championships" src="http://bwfworldchampionships.com/wp-content/themes/wch-2017/assets/images/total_logo_white-01.svg">
+                      </a>
+                  </div>
+  
+                  <!-- BWF logo link -->
+                  <div class="footer-info_logo col-sm-6 col-xs-6 text-right" style="width:50% !important;">
+                      <a href="http://bwfcorporate.com/" target="_blank">
+                          <img class="img-responsive pull-right b-error" src="http://bwfworldchampionships.com/wp-content/themes/wch-2017/assets/images/bwf_logo.png" alt="BWF Corporate">
+                      </a>
+                  </div>
+  
+  
+                  <div class="clearfix"></div>
+              </div>
+  
+          </div>
+  
+      </div>

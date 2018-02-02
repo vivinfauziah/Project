@@ -1,0 +1,24 @@
+.nav{
+    height: 50px;
+    background-color: rgb(224, 220, 220);
+}
+h1{
+    text-align: center;
+}
+.header{
+    height: 400px;
+    background-image: url("https://www.djarumbadminton.com/uploads/pics/Tai_Tzu_Ying.jpg");
+    background-size: cover;
+    padding-top: 150px;
+}
+table{
+    width: 100%;
+}
+.page{
+    text-align: center;
+    margin: 20px;
+}
+.site_footer_nav{
+    background-image: url("https://image.flaticon.com/icons/svg/123/123509.svg");
+    padding: 5px;
+}

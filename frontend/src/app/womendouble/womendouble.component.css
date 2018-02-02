@@ -1,0 +1,24 @@
+.nav{
+    height: 50px;
+    background-color: rgb(224, 220, 220);
+}
+h1{
+    text-align: center;
+}
+.header{
+    height: 400px;
+    background-image: url("http://cms.bwfbadminton.com/wp-content/uploads/2016/10/Denmark-Open-2016-Day-6-Misaki-Matsutomo-Ayaka-Takahashi-of-Japan.jpg");
+    background-size: cover;
+    padding-top: 150px;
+}
+table{
+    width: 100%;
+}
+.page{
+    text-align: center;
+    margin: 20px;
+}
+.site_footer_nav{
+    background-image: url("https://image.flaticon.com/icons/svg/123/123509.svg");
+    padding: 5px;
+}

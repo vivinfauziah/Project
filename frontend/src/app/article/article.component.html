@@ -1,0 +1,37 @@
+<div class="comment col-xs-12">
+  <div class="col-xs-offset-2 col-md-8">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">News Update</h3>
+      </div>
+      <div class="panel-body">
+        <form #f="ngForm" (ngSubmit)="SaveArticle(f)" class="form-horizontal" >
+          <div class="form-group">
+            <label class="col-sm-2">Source</label>
+            <div class="col-sm-12">
+              <input type="text" class="form-control" name="source" [(ngModel)]="source" style="border-radius: 3px;">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-2">Title</label>
+            <div class="col-sm-6">
+              <input type="text" class="form-control" name="title" [(ngModel)]="title">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-2">Content</label>
+            <div class="col-sm-6">
+              <!-- <input type="text" class="form-control" name="comment" ngModel> -->
+              <textarea name="content" id="" cols="70" rows="10" [(ngModel)]="content"></textarea>
+            </div>
+          </div>
+          <!-- <div class="butt" style="float:right"> -->
+          <input type="file" name="" id="" (change)="fileChange($event)">
+          <br>
+          <button type="submit" class="btn btn-primary">Add</button>
+          <!-- </div> -->
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

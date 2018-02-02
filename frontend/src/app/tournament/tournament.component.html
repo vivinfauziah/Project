@@ -1,0 +1,152 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<ul class="nav nav-pills">
+  <a class="navbar-brand" href="#">Smash Logo</a>
+  <li role="presentation"><a routerLink="/">News</a></li>
+  <li role="presentation" class="active"><a>Tournaments</a></li>
+  <li role="presentation"><a routerLink="/ranking">Rankings</a></li>
+</ul>
+
+
+<div class="rank col-xs-offset-1 col-md-10">
+  <div class="title">
+    <h3>Draw Superseries-MEN: China Open (China)</h3>
+  </div>
+  <div *ngFor="let u of tournament, index as i">
+  <table>
+    <td>{{u.time}}</td>
+    <td>{{u.status}}</td>
+    <td>{{u.player1}}</td>
+    <td>{{u.set1}}</td>
+    <td>{{u.score1}}</td>
+    <td>{{u.score2}}</td>
+    <tr></tr>
+    <td></td>
+    <td></td>
+    <td>{{u.player2}}</td>
+    <td>{{u.set2}}</td>
+    <td>{{u.score3}}</td>
+    <td>{{u.score4}}</td>
+  </table>
+  <br>
+</div>
+        </div>
+
+<div class="comment">
+        <div class="comment_ col-xs-offset-1 col-md-10">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">Leave a Reply</h3>
+              </div>
+              <div class="panel-body">
+                  <form class="form-horizontal" #f="ngForm" (ngSubmit)="SaveComments(f)">
+                      <div class="form-group">
+                        <label class="col-sm-2">Name</label>
+                        <div class="col-sm-6">
+                        <input type="text" class="form-control" name="name" ngModel>
+                      </div>
+                    </div>
+                      <div class="form-group">
+                          <label class="col-sm-2">Email</label>
+                          <div class="col-sm-6">
+                          <input type="text" class="form-control" name="email" ngModel>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                          <label class="col-sm-2">Comment</label>
+                          <div class="col-sm-6">
+                          <!-- <input type="text" class="form-control" name="comment" ngModel> -->
+                          <textarea type="text" name="comments" id="" cols="70" rows="10" ngModel></textarea>
+                        </div>
+                        </div>
+                        <div class="butt" style="float:right">
+                    <button type="submit" class="btn btn-primary">Add</button>
+                    <button type="button" class="btn btn-warning" (click)="ResetTask(f)">Reset</button></div>
+                  </form>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <!-- Default panel contents -->
+              <div class="panel-heading">Comments</div>
+
+              <div *ngFor="let t of comments, let i=index">
+                  <h5><b>From : {{t.name}}</b></h5>
+                  <p>{{t.comments}}</p><br>
+              </div>
+            </div>
+            </div>
+        </div>
+        <div class="site_footer_nav ">
+            
+                    <nav class="footer-nav row">
+            
+                        <div class="col-xs-12 col-md-4" style="text-align: center;">
+                            <h3 class="footer-nav_title">Social Media &amp; Apps</h3>
+                            <ul id="menu-social-media-links" class="footer-nav_list list-unstyled"><li id="menu-item-1727" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1727 fs-16px fw-400 text-gray navigation-section_menu_item_mobile "><a href="https://www.facebook.com/bwfbadminton">FACEBOOK</a></li>
+            <li id="menu-item-1728" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1728 fs-16px fw-400 text-gray navigation-section_menu_item_mobile "><a href="https://twitter.com/bwfmedia">TWITTER</a></li>
+            <li id="menu-item-1729" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1729 fs-16px fw-400 text-gray navigation-section_menu_item_mobile "><a href="http://t.qq.com/BWFbadminton">QQ</a></li>
+            <li id="menu-item-1730" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1730 fs-16px fw-400 text-gray navigation-section_menu_item_mobile "><a href="http://weibo.com/BWFofficial">WEIBO</a></li>
+            <li id="menu-item-1731" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1731 fs-16px fw-400 text-gray navigation-section_menu_item_mobile "><a href="http://i.youku.com/BWFofficial">YOUKU</a></li>
+            <li id="menu-item-1732" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1732 fs-16px fw-400 text-gray navigation-section_menu_item_mobile "><a href="https://www.youtube.com/user/bwf">YOUTUBE</a></li>
+            <li id="menu-item-1733" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1733 fs-16px fw-400 text-gray navigation-section_menu_item_mobile "><a href="https://soundcloud.com/bwfbadminton/bwf-world-superseries-anthem">SOUND CLOUD</a></li>
+            </ul>
+                        </div>
+            
+                        <div class="clearfix visible-xs"></div>
+            
+                        <div class="col-xs-12 col-md-4" style="text-align: center;">
+                            <h3 class="footer-nav_title">Website links</h3>
+                            <ul id="menu-website-links" class="footer-nav_list list-unstyled"><li id="menu-item-1720" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1720 fs-16px fw-400 text-gray navigation-section_menu_item_mobile "><a href="http://bwfbadminton.com/">BWFBADMINTON.COM</a></li>
+            <li id="menu-item-1721" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1721 fs-16px fw-400 text-gray navigation-section_menu_item_mobile "><a href="http://bwfcorporate.com/">BWFCORPORATE.COM</a></li>
+            <li id="menu-item-1722" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1722 fs-16px fw-400 text-gray navigation-section_menu_item_mobile "><a href="http://bwfworldsuperseries.com/">BWFWORLDSUPERSERIES.COM</a></li>
+            <li id="menu-item-1723" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1723 fs-16px fw-400 text-gray navigation-section_menu_item_mobile "><a target="_blank" href="http://badmintonworld.tv/">BADMINTONWORLD.TV</a></li>
+            <li id="menu-item-1724" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-1724 fs-16px fw-400 text-gray navigation-section_menu_item_mobile "><a href="http://bwfworldchampionships.com/">BWFWORLDCHAMPIONSHIPS.COM</a></li>
+            <li id="menu-item-1725" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1725 fs-16px fw-400 text-gray navigation-section_menu_item_mobile "><a href="http://bwfshuttletime.com/">BWFSHUTTLETIME.COM</a></li>
+            <li id="menu-item-1726" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1726 fs-16px fw-400 text-gray navigation-section_menu_item_mobile "><a href="http://bwfeducation.com/">BWFEDUCATION.COM</a></li>
+            <li id="menu-item-2845" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2845 fs-16px fw-400 text-gray navigation-section_menu_item_mobile "><a href="http://bwfsudirmancup.com">BWFSUDIRMANCUP.COM</a></li>
+            </ul>
+                        </div>
+            
+                        <div class="col-xs-12 col-md-4" style="text-align: center;">
+                            <h3 class="footer-nav_title">SMASHCORE HQ Contact</h3>
+                            <ul class="footer-nav_list list-unstyled">
+                                <li>Unit No. 1, Level 29 <br>
+                                    Naza Tower Platinum Park <br>
+                                    No. 10, Persiaran KLCC <br>
+                                    50088 Kuala Lumpur <br>
+                                    Malaysia <br>
+                                    &nbsp;
+                                </li>
+                            </ul>
+                        </div>
+            
+                    </nav>
+
+            
+                    <div class="footer-info">
+            
+                        <div class="footer-info_credit ">
+            
+                            <!-- Total logo link -->
+                            <div class="footer-info_logo col-sm-6 col-xs-6 text-left" style="width:50% !important;">
+                                <a href="http://www.lubricants.total.com/" target="_blank">
+                                    <img class="img-responsive b-error" alt="Total BWF World Championships" src="http://bwfworldchampionships.com/wp-content/themes/wch-2017/assets/images/total_logo_white-01.svg">
+                                </a>
+                            </div>
+            
+                            <!-- BWF logo link -->
+                            <div class="footer-info_logo col-sm-6 col-xs-6 text-right" style="width:50% !important;">
+                                <a href="http://bwfcorporate.com/" target="_blank">
+                                    <img class="img-responsive pull-right b-error" src="http://bwfworldchampionships.com/wp-content/themes/wch-2017/assets/images/bwf_logo.png" alt="BWF Corporate">
+                                </a>
+                            </div>
+            
+            
+                            <div class="clearfix"></div>
+                        </div>
+            
+                    </div>
+            
+                </div>
